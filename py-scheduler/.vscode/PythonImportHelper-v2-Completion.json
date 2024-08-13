@@ -1,0 +1,53 @@
+[
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "AsyncIOScheduler",
+        "importPath": "apscheduler.schedulers.asyncio",
+        "description": "apscheduler.schedulers.asyncio",
+        "isExtraImport": true,
+        "detail": "apscheduler.schedulers.asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "MemoryJobStore",
+        "importPath": "apscheduler.jobstores.memory",
+        "description": "apscheduler.jobstores.memory",
+        "isExtraImport": true,
+        "detail": "apscheduler.jobstores.memory",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "app = FastAPI()\n# configuration\njobstrores = {\n    'default': MemoryJobStore()\n}\n# Initialize an AsyncIOScheduler with the jobstore\nscheduler = AsyncIOScheduler(jobstores=jobstores)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "jobstrores",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "jobstrores = {\n    'default': MemoryJobStore()\n}\n# Initialize an AsyncIOScheduler with the jobstore\nscheduler = AsyncIOScheduler(jobstores=jobstores)",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "scheduler",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "scheduler = AsyncIOScheduler(jobstores=jobstores)",
+        "detail": "main",
+        "documentation": {}
+    }
+]
