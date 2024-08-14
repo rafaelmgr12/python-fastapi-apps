@@ -4,6 +4,8 @@ from auth.jwt_handler import JWTBearer
 
 app = FastAPI()
 
+app.include_router(notifications_router, prefix="/notifications", dependencies=[Depends(JWTBearer())])
+
 
 @app.get("/")
 def read_root():
