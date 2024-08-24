@@ -1,4 +1,6 @@
 
+import random
+import time
 from fastapi import FastAPI, BackgroundTasks
 from pydantic import BaseModel
 
@@ -10,6 +12,12 @@ class UserRegistrationRequest(BaseModel):
 def send_welcome_message(email: str):
     # Simulating sending an email
     print(f"Sending welcome email to: {email}")
+    time.sleep(5)
+    choice = random.choice(seq=[True,False])
+    if choice:
+        print(f"Sucessul sending for {email}")
+    else:
+        print(f"Error sending email for {email}")
     
     
 @app.get(path="/")
