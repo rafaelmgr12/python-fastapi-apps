@@ -1,0 +1,15 @@
+### Test In-Memory Caching - Compute Factorial
+GET http://localhost:8000/factorial/10
+Content-Type: application/json
+
+### Test Disk Caching - Post Data
+POST http://localhost:8000/data
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "age": 30
+}
+
+### Clear Disk Cache
+GET http://localhost:8000/clear-cache
