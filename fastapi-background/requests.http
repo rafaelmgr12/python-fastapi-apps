@@ -1,0 +1,9 @@
+
+### Register a user and trigger background task
+
+POST http://localhost:8000/register/
+Content-Type: application/json
+
+{
+    "email": "user@example.com"
+}
